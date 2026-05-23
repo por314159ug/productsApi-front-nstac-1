@@ -1,0 +1,76 @@
+.products-container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+.product-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.product-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.save-btn, .edit-btn, .delete-btn, .cancel-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.save-btn { background-color: #28a745; color: white; }
+.save-btn:hover { background-color: #218838; }
+.cancel-btn { background-color: #6c757d; color: white; }
+.cancel-btn:hover { background-color: #5a6268; }
+.edit-btn { background-color: #ffc107; color: #212529; margin-right: 5px; }
+.edit-btn:hover { background-color: #e0a800; }
+.delete-btn { background-color: #dc3545; color: white; }
+.delete-btn:hover { background-color: #c82333; }
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+.product-actions {
+  display: flex;
+}
+.product-name {
+  font-weight: bold;
+}
+.product-stock {
+  font-size: 14px;
+  color: #666;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  .product-input {
+    background-color: #333;
+    color: #fff;
+    border-color: #444;
+  }
+  .product-item {
+    background-color: #2a2a2a;
+    border-color: #444;
+  }
+}
